@@ -3,17 +3,17 @@ The IT departent is responsible for maintaining the physical space, ensuring sec
 
 
 
-																		                                     SaaS    PaaS     IaaS    Onpremise
-	Responsibility             |--	Information and data                    ⬛      ⬛      ⬛ 		   ⬛
-	Always retained     -------|	  Devices (mobiles & PCs)                 ⬛      ⬛      ⬛        ⬛ 
-	by customer		             |	  Accounts and Identities                 ⬛      ⬛      ⬛        ⬛ 
-					                   |--	Identity and directory infrastructure   ◩       ◩       ⬛        ⬛
-	Responsibility             |	  Applications                            ⬜      ◩       ⬛        ⬛
-	varies by type     --------|	  Network Controls                        ⬜      ◩       ⬛        ⬛
-					                   |--	Operating System                        ⬜      ⬜      ⬛        ⬛ 
-	Responsibility transfers   |	  Physical hosts                          ⬜      ⬜      ⬜			    ⬛
-	to cloud providers	-------|	  Physical network                        ⬜      ⬜      ⬜        ⬛ 
-  							             |--	Physical Datacenter                     ⬜      ⬜      ⬜        ⬛ 
+																		    SaaS    PaaS     IaaS    Onpremise
+	Responsibility             __	Information and data                    ⬛      ⬛      ⬛ 	    ⬛
+	Always retained     -------|	Devices (mobiles & PCs)                 ⬛      ⬛      ⬛        ⬛ 
+	by customer		           |	Accounts and Identities                 ⬛      ⬛      ⬛        ⬛ 
+					           |--	Identity and directory infrastructure   ◩       ◩       ⬛        ⬛
+	Responsibility             |	Applications                            ⬜      ◩       ⬛        ⬛
+	varies by type     --------|	Network Controls                        ⬜      ◩       ⬛        ⬛
+					           |--	Operating System                        ⬜      ⬜      ⬛        ⬛ 
+	Responsibility transfers   |	Physical hosts                          ⬜      ⬜      ⬜		   ⬛
+	to cloud providers	-------|	Physical network                        ⬜      ⬜      ⬜        ⬛ 
+  							   |__	Physical Datacenter                     ⬜      ⬜      ⬜        ⬛ 
 
 
 ⬜Microsoft ⬛Customer ◩Shared 
