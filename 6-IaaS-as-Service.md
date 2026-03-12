@@ -1,4 +1,3 @@
-
 ::::::: Infrastructure as a Service (IaaS) in Azure :::::::
 
 IaaS provides on-demand access to fundamental computing resources like virtual machines (VMs), storage, and networking, serving as a virtualized version of a traditional datacenter.
