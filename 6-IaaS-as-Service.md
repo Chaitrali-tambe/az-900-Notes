@@ -1,6 +1,6 @@
 ::::::: Infrastructure as a Service (IaaS) in Azure :::::::
 
-																      IaaS 
+																	   IaaS 
 Responsibility             |--	Information and data                    ◼        		 
 Always retained          --|    Devices (mobiles & PCs)                 ◼        
 by customer		           |	Accounts and Identities                 ◼       		    
