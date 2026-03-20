@@ -22,5 +22,5 @@ SaaS delivers fully functional software applications over the internet on a subs
   ► Predictable Cost: Usually subscription-based pricing.
 ▫ Cons:
   ► Limited Flexibility: Little to no customization of the software functionality.
-  ► Data Security/Control: Relies entirely on the vendor for security and data integrity.
+  ► Data Security/Control: Rely entirely on the vendor for security and data integrity.
 
