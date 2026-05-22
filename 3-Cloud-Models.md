@@ -33,9 +33,11 @@ graph LR
 
 ### ► Public Cloud (Azure)		
   Infrastructure is owned and operated by a third-party provider (e.g., Microsoft) and shared across organizations (multi-tenant). 
-  * ▫ **Pros:** Cost-effective, no maintenance, high elasticity.
-  * ▫ **Cons:** Limited control, potential data security concerns.
-  * ▫ **Example:** A web application using Azure App Service and Azure SQL Database that scales automatically to handle traffic spikes without purchasing hardware.
+  <ul style="list-style-type: none; padding-left: 20px;">
+  <li>▫ <strong>Pros:</strong> Cost-effective, no maintenance, high elasticity.</li>
+  <li><li>▫ <strong>Cons:</strong> Limited control, potential data security concerns.</li>
+  <li>▫ <strong>Example:</strong> A web application using Azure App Service and Azure SQL Database that scales automatically to handle traffic spikes without purchasing hardware.</li>
+   </ul>
    
 ### ► Private Cloud (On-Prem/Azure Stack)
   Cloud infrastructure used exclusively by a single organization, hosted on-premises or by a third party (single-tenant).
