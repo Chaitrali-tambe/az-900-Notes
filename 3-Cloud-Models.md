@@ -2,43 +2,73 @@
 
 ```mermaid
 graph LR
-    A([Cloud Models]) --- B(Public Cloud <br> (Azure))
-    A --- C(Private Cloud <br> (On-Prem / Azure Stack))
-    A --- D(Hybrid Cloud <br> (Azure Arc))
+    %% Main Connections
+    A([Cloud Models]) --- B(Public Cloud)
+    A --- C(Private Cloud)
+    A --- D(Hybrid Cloud)
     A --- E(Community Cloud)
+
+    %% Example Connections
+    B --- B1(Azure)
+    C --- C1(On-Prem / Azure Stack)
+    D --- D1(Azure Arc)
+    E --- E1(Shared U.S. Gov Cloud)
+
+    %% Custom Colors (Background, Text, Border)
+    style A fill:#1f77b4,stroke:#1f77b4,stroke-width:2px,color:#fff
+    
+    %% Main Cloud Models (Light Blue)
+    style B fill:#d0e1fd,stroke:#4a90e2,stroke-width:2px,color:#000
+    style C fill:#d0e1fd,stroke:#4a90e2,stroke-width:2px,color:#000
+    style D fill:#d0e1fd,stroke:#4a90e2,stroke-width:2px,color:#000
+    style E fill:#d0e1fd,stroke:#4a90e2,stroke-width:2px,color:#000
+
+    %% Example Bubbles (Light Gray)
+    style B1 fill:#f0f0f0,stroke:#999,stroke-width:1px,color:#333
+    style C1 fill:#f0f0f0,stroke:#999,stroke-width:1px,color:#333
+    style D1 fill:#f0f0f0,stroke:#999,stroke-width:1px,color:#333
+    style E1 fill:#f0f0f0,stroke:#999,stroke-width:1px,color:#333
 ```
 
-
 ### ► Public Cloud (Azure)		
-  Infrastructure is owned and operated by a third-party provider (e.g., Microsoft) and shared across organizations (multi-tenant). 
-  ▫ **Pros:** Cost-effective, no maintenance, high elasticity.
-  ▫ **Cons:** Limited control, potential data security concerns.
-  ▫ **Example:** A web application using Azure App Service and Azure SQL Database that scales automatically to handle traffic spikes without purchasing hardware.
+Infrastructure is owned and operated by a third-party provider (e.g., Microsoft) and shared across organizations (multi-tenant). 
+<dl>
+  <dd>▫ <strong>Pros:</strong> Cost-effective, no maintenance, high elasticity.</dd>
+  <dd>▫ <strong>Cons:</strong> Limited control, potential data security concerns.</dd>
+  <dd>▫ <strong>Example:</strong> A web application using Azure App Service and Azure SQL Database that scales automatically to handle traffic spikes without purchasing hardware.</dd>
+</dl>
    
 ### ► Private Cloud (On-Prem/Azure Stack)
-  Cloud infrastructure used exclusively by a single organization, hosted on-premises or by a third party (single-tenant).
-  ▫ **Pros:** Maximum security, customization, compliance.
-  ▫ **Cons:** High cost (CapEx), high management effort.
-  ▫ **Example:** A company using Azure Stack in their own data center to run legacy applications while maintaining, for regulatory reasons, strict control over the hardware.
+Cloud infrastructure used exclusively by a single organization, hosted on-premises or by a third party (single-tenant).
+<dl>
+  <dd>▫ <strong>Pros:</strong> Maximum security, customization, compliance.</dd>
+  <dd>▫ <strong>Cons:</strong> High cost (CapEx), high management effort.</dd>
+  <dd>▫ <strong>Example:</strong> A company using Azure Stack in their own data center to run legacy applications while maintaining, for regulatory reasons, strict control over the hardware.</dd>
+</dl>
   
 ### ► Hybrid Cloud (Azure Arc)
-  A combination of public and private clouds, allowing data and applications to be shared between them. 
-  ▫ **Pros:** Flexibility, "bursting" capability to handle spikes, cost-optimization.
-  ▫ **Cons:** Complex to set up, security management for both environments.
-  ▫ **Example:** A retail company using an on-premises datacenter for sensitive transaction data (private), while using Azure Kubernetes Service (AKS) for their customer-facing website, using Azure Arc to manage both environments as one
+A combination of public and private clouds, allowing data and applications to be shared between them. 
+<dl>
+  <dd>▫ <strong>Pros:</strong> Flexibility, "bursting" capability to handle spikes, cost-optimization.</dd>
+  <dd>▫ <strong>Cons:</strong> Complex to set up, security management for both environments.</dd>
+  <dd>▫ <strong>Example:</strong> A retail company using an on-premises datacenter for sensitive transaction data (private), while using Azure Kubernetes Service (AKS) for their customer-facing website, using Azure Arc to manage both environments as one.</dd>
+</dl>
   
 ### ► Community Cloud
-  Infrastructure shared by several organizations with common concerns (e.g., compliance, security).
-  ▫ **Pros:** Better security than public, cheaper than private, collaborative.
-  ▫ **Cons:** Limited customization, shared responsibility.
-  ▫ **Example:** A consortium of hospitals using a shared, compliant Azure environment for sharing medical imaging data.
-
+Infrastructure shared by several organizations with common concerns (e.g., compliance, security).
+<dl>
+  <dd>▫ <strong>Pros:</strong> Better security than public, cheaper than private, collaborative.</dd>
+  <dd>▫ <strong>Cons:</strong> Limited customization, shared responsibility.</dd>
+  <dd>▫ <strong>Example:</strong> A consortium of hospitals using a shared, compliant Azure environment for sharing medical imaging data.</dd>
+</dl>
 
 ## :::: Additional Concept ::::
 ### ► Multi Cloud:
-  Multicloud is the strategic use of services from two or more public cloud providers (e.g., Azure + AWS) to run applications, optimize performance, and avoid vendor lock-in.
-  ▫ **Pros:** Flexibility to switch providers, minimizes downtime if one provider fails, leveraging the cheapest provider for specific tasks.
-  ▫ **Cons:**  Requires specialized cross-platform expertise, harder to manage, monitor, and secure multiple platforms.
-  ▫ **Example:** A company uses Azure Cosmos DB for global, low-latency database needs, while simultaneously using AWS S3 for long-term data archiving. They might manage both using Azure Arc, which brings Azure’s security and governance to AWS resources. 
+Multicloud is the strategic use of services from two or more public cloud providers (e.g., Azure + AWS) to run applications, optimize performance, and avoid vendor lock-in.
+<dl>
+  <dd>▫ <strong>Pros:</strong> Flexibility to switch providers, minimizes downtime if one provider fails, leveraging the cheapest provider for specific tasks.</dd>
+  <dd>▫ <strong>Cons:</strong> Requires specialized cross-platform expertise, harder to manage, monitor, and secure multiple platforms.</dd>
+  <dd>▫ <strong>Example:</strong> A company uses Azure Cosmos DB for global, low-latency database needs, while simultaneously using AWS S3 for long-term data archiving. They might manage both using Azure Arc, which brings Azure’s security and governance to AWS resources.</dd>
+</dl>
 
 ***Key Azure Tool:*** Azure Arc is commonly used to manage servers, apps, and Kubernetes clusters across Azure, AWS, and on-premises, enabling a unified multicloud control plane.
