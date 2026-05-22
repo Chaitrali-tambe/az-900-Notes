@@ -1,23 +1,13 @@
 # Types of Cloud Models
 
 ```mermaid
-                  ┌──────────────────────┐
-                  │     Public Cloud     │
-               ┌──│        Azure         │
-               │  └──────────────────────┘
-               │  ┌──────────────────────┐
-               │  │    Private Cloud     │
- ┌──────────┐  ├──│ On-Prem/Azure Stack  │
- │  Cloud   │──┤  └──────────────────────┘
- │  Models  │  │  ┌──────────────────────┐
- └──────────┘  │  │     Hybrid Cloud     │
-               ├──│      Azure Arc       │
-               │  └──────────────────────┘
-               │  ┌──────────────────────┐
-               │  │   Community Cloud    │
-               └──│                      │
-                  └──────────────────────┘
+graph LR
+    A([Cloud Models]) --- B(Public Cloud <br> Azure)
+    A --- C(Private Cloud <br> On-Prem / Azure Stack)
+    A --- D(Hybrid Cloud <br> Azure Arc)
+    A --- E(Community Cloud)
 ```
+
 
 ### ► Public Cloud (Azure)		
   Infrastructure is owned and operated by a third-party provider (e.g., Microsoft) and shared across organizations (multi-tenant). 
