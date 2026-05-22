@@ -1,9 +1,12 @@
 # Types of Cloud Models
 
-***Cloud Models*** ---|---- Public Cloud (Azure)		
-                |---- Private Cloud (On-Prem/Azure Stack)
-                |----	Hybrid Cloud (Azure Arc)
-                |---- Community Cloud
+```mindmap
+  root((Cloud Models))
+    Public Cloud <br> Azure
+    Private Cloud <br> On-Prem / Azure Stack
+    Hybrid Cloud <br> Azure Arc
+    Community Cloud
+```
 
 ### ► Public Cloud (Azure)		
   Infrastructure is owned and operated by a third-party provider (e.g., Microsoft) and shared across organizations (multi-tenant). 
