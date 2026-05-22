@@ -2,9 +2,9 @@
 
 ```mermaid
 graph LR
-    A([Cloud Models]) --- B(Public Cloud <br> Azure)
-    A --- C(Private Cloud <br> On-Prem / Azure Stack)
-    A --- D(Hybrid Cloud <br> Azure Arc)
+    A([Cloud Models]) --- B(Public Cloud <br> (Azure))
+    A --- C(Private Cloud <br> (On-Prem / Azure Stack))
+    A --- D(Hybrid Cloud <br> (Azure Arc))
     A --- E(Community Cloud)
 ```
 
