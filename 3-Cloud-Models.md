@@ -1,11 +1,22 @@
 # Types of Cloud Models
 
-```mindmap
-  root((Cloud Models))
-    Public Cloud <br> Azure
-    Private Cloud <br> On-Prem / Azure Stack
-    Hybrid Cloud <br> Azure Arc
-    Community Cloud
+```mermaid
+                  ┌──────────────────────┐
+                  │     Public Cloud     │
+               ┌──│        Azure         │
+               │  └──────────────────────┘
+               │  ┌──────────────────────┐
+               │  │    Private Cloud     │
+ ┌──────────┐  ├──│ On-Prem/Azure Stack  │
+ │  Cloud   │──┤  └──────────────────────┘
+ │  Models  │  │  ┌──────────────────────┐
+ └──────────┘  │  │     Hybrid Cloud     │
+               ├──│      Azure Arc       │
+               │  └──────────────────────┘
+               │  ┌──────────────────────┐
+               │  │   Community Cloud    │
+               └──│                      │
+                  └──────────────────────┘
 ```
 
 ### ► Public Cloud (Azure)		
