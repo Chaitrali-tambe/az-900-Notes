@@ -14,8 +14,8 @@ Azure Tools:
 **Simple Idea:** Handling growth. Adding more power (scale up) or more servers (scale out) when busy.
 **Types:**
 <dl>
-	<dd>▸ <strong>Vertical Scaling _(Scale Up/Down)_:</strong> Increasing the size of a single instance, such as moving from 4GB RAM to 16GB RAM.</dd>
-	<dd>▸ <strong>Horizontal Scaling _(Scale Out/In)_:</strong> Increasing or decreasing the number of instances (VMs), such as going from 2 servers to 5.</dd>
+	<dd>▸ <strong>Vertical Scaling <em>(Scale Up/Down)</em>:</strong> Increasing the size of a single instance, such as moving from 4GB RAM to 16GB RAM.</dd>
+	<dd>▸ <strong>Horizontal Scaling <em>(Scale Out/In)</em>:</strong> Increasing or decreasing the number of instances (VMs), such as going from 2 servers to 5.</dd>
 </dl>
 <dl>
 Azure Tools:
