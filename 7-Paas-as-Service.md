@@ -9,23 +9,23 @@ graph LR
     classDef groupStyle fill:#f8f9fa,stroke:#bdc3c7,stroke-width:1px,stroke-dasharray: 5 5;
 
     %% --- MAP-STYLE INLINE LEGEND ---
-    L1["🔵 Customer Managed ◼"]:::customer --> PaaS
-    L2["🟠 Shared Responsibility ◩"]:::shared --> PaaS
-    L3["⚪ Provider Managed ☐"]:::provider --> PaaS
+    L1["🔵 Customer Managed"]:::customer --> PaaS
+    L2["🟠 Shared Responsibility"]:::shared --> PaaS
+    L3["⚪ Provider Managed"]:::provider --> PaaS
 
     %% --- PAAS ONLY COLUMN (CONNECTED LANDSCAPE) ---
     subgraph PaaS [Platform as a Service - PaaS]
         direction LR
-        I1[Information and data ◼]:::customer -->
-        I2[Devices mobiles & PCs ◼]:::customer -->
-        I3[Accounts and Identities ◼]:::customer -->
-        I4[Identity & directory infra ◩]:::shared -->
-        I5[Applications ◩]:::shared -->
-        I6[Network Controls ◩]:::shared -->
-        I7[Operating System ☐]:::provider -->
-        I8[Physical hosts ☐]:::provider -->
-        I9[Physical network ☐]:::provider -->
-        I10[Physical Datacenter ☐]:::provider
+        I1[Information and data]:::customer -->
+        I2[Devices mobiles & PCs]:::customer -->
+        I3[Accounts and Identities]:::customer -->
+        I4[Identity & directory infra]:::shared -->
+        I5[Applications]:::shared -->
+        I6[Network Controls]:::shared -->
+        I7[Operating System]:::provider -->
+        I8[Physical hosts]:::provider -->
+        I9[Physical network:::provider -->
+        I10[Physical Datacenter]:::provider
     end
 
     %% Apply group style
