@@ -4,17 +4,22 @@ The IT departent is responsible for maintaining the physical space, ensuring sec
 
 ```mermaid
 	graph TD
-    %% Global Settings
-    %% TD layout naturally formats models side-by-side as portrait columns
-
     %% Styles and Themes
     classDef customer fill:#2c3e50,stroke:#1a252f,stroke-width:2px,color:#fff;
     classDef shared fill:#e67e22,stroke:#d35400,stroke-width:2px,color:#fff;
     classDef provider fill:#7f8c8d,stroke:#95a5a6,stroke-width:1px,color:#fff;
     classDef groupStyle fill:#f8f9fa,stroke:#bdc3c7,stroke-width:1px;
 
+    %% --- VISUAL LEGEND HEADER ---
+    subgraph LEGEND [Color Key / Responsibilities]
+        direction LR
+        L1[Dark Blue: Customer Managed]:::customer
+        L2[Orange: Shared Responsibility]:::shared
+        L3[Grey: Cloud Provider Managed]:::provider
+    end
+
     %% --- SAAS COLUMN ---
-    subgraph SaaS [SaaS Column]
+    subgraph SaaS [SaaS]
         direction TB
         S1[Data & Info]:::customer -->
         S2[Devices]:::customer -->
@@ -29,7 +34,7 @@ The IT departent is responsible for maintaining the physical space, ensuring sec
     end
 
     %% --- PAAS COLUMN ---
-    subgraph PaaS [PaaS Column]
+    subgraph PaaS [PaaS]
         direction TB
         P1[Data & Info]:::customer -->
         P2[Devices]:::customer -->
@@ -44,7 +49,7 @@ The IT departent is responsible for maintaining the physical space, ensuring sec
     end
 
     %% --- IAAS COLUMN ---
-    subgraph IaaS [IaaS Column]
+    subgraph IaaS [IaaS]
         direction TB
         I1[Data & Info]:::customer -->
         I2[Devices]:::customer -->
@@ -59,7 +64,7 @@ The IT departent is responsible for maintaining the physical space, ensuring sec
     end
 
     %% --- ON-PREMISE COLUMN ---
-    subgraph OnPrem [On-Prem Column]
+    subgraph OnPrem [On-Premise]
         direction TB
         O1[Data & Info]:::customer -->
         O2[Devices]:::customer -->
@@ -73,10 +78,17 @@ The IT departent is responsible for maintaining the physical space, ensuring sec
         O10[Datacenter]:::customer
     end
 
+    %% Anchor the legend neatly above the portrait infrastructure columns
+    LEGEND --> SaaS
+    LEGEND --> PaaS
+    LEGEND --> IaaS
+    LEGEND --> OnPrem
+
     %% Apply group styles to columns
     style SaaS groupStyle
     style PaaS groupStyle
     style IaaS groupStyle
     style OnPrem groupStyle
+
 
 ```
