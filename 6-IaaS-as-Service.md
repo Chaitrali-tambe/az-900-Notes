@@ -1,35 +1,32 @@
 # Infrastructure as a Service (IaaS) in Azure
 
 ```mermaid
-graph TD
+graph LR
     %% Styles and Themes
     classDef customer fill:#2c3e50,stroke:#1a252f,stroke-width:2px,color:#fff;
     classDef provider fill:#7f8c8d,stroke:#95a5a6,stroke-width:1px,color:#fff;
-    classDef groupStyle fill:#f8f9fa,stroke:#bdc3c7,stroke-width:1px;
+    classDef groupStyle fill:#f8f9fa,stroke:#bdc3c7,stroke-width:1px,stroke-dasharray: 5 5;
 
-    %% --- INLINE LEGEND NODES ---
-    L1["🟦 Customer Managed (◼)"]:::customer --> IaaS
-    L2["🟫 Provider Managed (☐)"]:::provider --> IaaS
+    %% --- MAP-STYLE INLINE LEGEND ---
+    L1["🔵 Customer Managed (◼)"]:::customer --> IaaS
+    L2["⚪ Provider Managed (☐)"]:::provider --> IaaS
 
-    %% --- IAAS ONLY COLUMN ---
+    %% --- IAAS ONLY COLUMN (LANDSCAPE) ---
     subgraph IaaS [Infrastructure as a Service - IaaS]
-        direction TB
-        I1[Information and data ◼]:::customer -->
-        I2[Devices mobiles & PCs ◼]:::customer -->
-        I3[Accounts and Identities ◼]:::customer -->
-        I4[Identity & directory infra ◼]:::customer -->
-        I5[Applications ◼]:::customer -->
-        I6[Network Controls ◼]:::customer -->
-        I7[Operating System ◼]:::customer -->
-        I8[Physical hosts ☐]:::provider -->
-        I9[Physical network ☐]:::provider -->
+        I1[Information and data ◼]:::customer
+        I2[Devices mobiles & PCs ◼]:::customer
+        I3[Accounts and Identities ◼]:::customer
+        I4[Identity & directory infra ◼]:::customer
+        I5[Applications ◼]:::customer
+        I6[Network Controls ◼]:::customer
+        I7[Operating System ◼]:::customer
+        I8[Physical hosts ☐]:::provider
+        I9[Physical network ☐]:::provider
         I10[Physical Datacenter ☐]:::provider
     end
 
     %% Apply group style
     style IaaS groupStyle
-
-
 
 ```
 
