@@ -10,13 +10,10 @@ The IT departent is responsible for maintaining the physical space, ensuring sec
     classDef provider fill:#7f8c8d,stroke:#95a5a6,stroke-width:1px,color:#fff;
     classDef groupStyle fill:#f8f9fa,stroke:#bdc3c7,stroke-width:1px;
 
-    %% --- VISUAL LEGEND HEADER ---
-    subgraph LEGEND [Color Key / Responsibilities]
-        direction LR
-        L1[Dark Blue: Customer Managed]:::customer
-        L2[Orange: Shared Responsibility]:::shared
-        L3[Grey: Cloud Provider Managed]:::provider
-    end
+    %% --- INLINE LEGEND NODES (NO SUBGRAPH) ---
+    L1["🟦 Customer Managed"]:::customer --> SaaS
+    L2["🟧 Shared Responsibility"]:::shared --> PaaS
+    L3["🟫 Provider Managed"]:::provider --> IaaS
 
     %% --- SAAS COLUMN ---
     subgraph SaaS [SaaS]
@@ -78,17 +75,13 @@ The IT departent is responsible for maintaining the physical space, ensuring sec
         O10[Datacenter]:::customer
     end
 
-    %% Anchor the legend neatly above the portrait infrastructure columns
-    LEGEND --> SaaS
-    LEGEND --> PaaS
-    LEGEND --> IaaS
-    LEGEND --> OnPrem
+    %% Additional layout alignment
+    L3 --> OnPrem
 
     %% Apply group styles to columns
     style SaaS groupStyle
     style PaaS groupStyle
     style IaaS groupStyle
     style OnPrem groupStyle
-
 
 ```
