@@ -24,7 +24,7 @@ graph LR
         I6[Network Controls]:::shared -->
         I7[Operating System]:::provider -->
         I8[Physical hosts]:::provider -->
-        I9[Physical network:::provider -->
+        I9[Physical network]:::provider -->
         I10[Physical Datacenter]:::provider
     end
 
