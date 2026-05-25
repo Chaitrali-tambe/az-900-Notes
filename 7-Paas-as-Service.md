@@ -35,15 +35,22 @@ graph LR
 
 
 PaaS provides a framework for developers to build, test, and deploy applications without worrying about underlying infrastructure management.
-▫ How it Works: Azure handles the OS, middleware, and runtime. You focus solely on developing and managing your application code and data.
-▫ Azure Examples: Azure App Service, Azure SQL Database, Azure Functions, Azure Kubernetes Service (AKS).
-▫ Pros: 
-  ► Faster Development: Accelerates development cycles by removing infrastructure setup.
-  ► Reduced Maintenance: Azure handles patching and OS updates.
-  ► Cost-Effective: Pay only for resources consumed, reducing idle hardware costs.
-▫ Cons:
-  ► Limited Customization: Less control over the underlying infrastructure and configuration.
-  ► Vendor Lock-in: Applications may be tied specifically to Azure services. 
-  
 
+### How it Works: 
+Azure handles the OS, middleware, and runtime. You focus solely on developing and managing your application code and data.
 
+### Azure Examples: 
+Azure App Service, Azure SQL Database, Azure Functions, Azure Kubernetes Service (AKS).
+
+### Pros: 
+<dl>
+    <dd> ► <strong>Faster Development:</strong> Accelerates development cycles by removing infrastructure setup.</dd>
+    <dd> ► <strong>Reduced Maintenance:</strong> Azure handles patching and OS updates.</dd>
+    <dd> ► <strong>Cost-Effective:</strong> Pay only for resources consumed, reducing idle hardware costs.</dd>
+</dl>
+
+### Cons:
+<dl>
+    <dd> ► <strong>Limited Customization:</strong> Less control over the underlying infrastructure and configuration.</dd>
+    <dd> ► <strong>Vendor Lock-in:</strong> Applications may be tied specifically to Azure services. </dd>
+</dl>
